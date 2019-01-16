@@ -14,7 +14,62 @@
 		22EA188721EE5E7200492D65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EA188521EE5E7200492D65 /* LaunchScreen.storyboard */; };
 		22EA189121EE7CEE00492D65 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EA188F21EE7CEE00492D65 /* Kingfisher.framework */; };
 		22EA189221EE7CEE00492D65 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EA189021EE7CEE00492D65 /* Alamofire.framework */; };
+		22EA189521EE7E3F00492D65 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA189421EE7E3F00492D65 /* AppCoordinator.swift */; };
+		22EA189921EE819300492D65 /* DrinksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA189721EE819300492D65 /* DrinksListViewController.swift */; };
+		22EA189A21EE819300492D65 /* DrinksListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22EA189821EE819300492D65 /* DrinksListViewController.xib */; };
+		22EA18A521EEEC6F00492D65 /* DrinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA18A321EEEC6F00492D65 /* DrinkTableViewCell.swift */; };
+		22EA18A621EEEC6F00492D65 /* DrinkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22EA18A421EEEC6F00492D65 /* DrinkTableViewCell.xib */; };
+		22EA18CB21EEEEBA00492D65 /* ImmutableModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 22EA18C921EEEEBA00492D65 /* ImmutableModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22EA18CE21EEEEBA00492D65 /* ImmutableModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EA18C721EEEEB900492D65 /* ImmutableModels.framework */; };
+		22EA18CF21EEEEBA00492D65 /* ImmutableModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22EA18C721EEEEB900492D65 /* ImmutableModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		22EA18D421EEEEC200492D65 /* DrinkListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA189C21EE87BD00492D65 /* DrinkListItem.swift */; };
+		22EA18D721EEF0C500492D65 /* CustomCells+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA18D621EEF0C500492D65 /* CustomCells+Extensions.swift */; };
+		22EA18E121EEF19900492D65 /* Services.h in Headers */ = {isa = PBXBuildFile; fileRef = 22EA18DF21EEF19900492D65 /* Services.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22EA18E421EEF19900492D65 /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EA18DD21EEF19800492D65 /* Services.framework */; };
+		22EA18E521EEF19900492D65 /* Services.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22EA18DD21EEF19800492D65 /* Services.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		22EA18EA21EEF1AD00492D65 /* DrinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA18E921EEF1AD00492D65 /* DrinkService.swift */; };
+		22EA18EB21EF01C600492D65 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EA189021EE7CEE00492D65 /* Alamofire.framework */; };
+		22EA18EF21EF7DB300492D65 /* DrinksListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA18EE21EF7DB300492D65 /* DrinksListResult.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22EA18CC21EEEEBA00492D65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22EA187121EE5E7000492D65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22EA18C621EEEEB900492D65;
+			remoteInfo = ImmutableModels;
+		};
+		22EA18E221EEF19900492D65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22EA187121EE5E7000492D65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22EA18DC21EEF19800492D65;
+			remoteInfo = Services;
+		};
+		22EA18EC21EF032400492D65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22EA187121EE5E7000492D65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22EA18C621EEEEB900492D65;
+			remoteInfo = ImmutableModels;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22EA18D321EEEEBA00492D65 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				22EA18E521EEF19900492D65 /* Services.framework in Embed Frameworks */,
+				22EA18CF21EEEEBA00492D65 /* ImmutableModels.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		22EA187921EE5E7000492D65 /* FECodeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FECodeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +81,21 @@
 		22EA188821EE5E7200492D65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22EA188F21EE7CEE00492D65 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		22EA189021EE7CEE00492D65 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		22EA189421EE7E3F00492D65 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		22EA189721EE819300492D65 /* DrinksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksListViewController.swift; sourceTree = "<group>"; };
+		22EA189821EE819300492D65 /* DrinksListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinksListViewController.xib; sourceTree = "<group>"; };
+		22EA189C21EE87BD00492D65 /* DrinkListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkListItem.swift; sourceTree = "<group>"; };
+		22EA18A321EEEC6F00492D65 /* DrinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTableViewCell.swift; sourceTree = "<group>"; };
+		22EA18A421EEEC6F00492D65 /* DrinkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinkTableViewCell.xib; sourceTree = "<group>"; };
+		22EA18C721EEEEB900492D65 /* ImmutableModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImmutableModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22EA18C921EEEEBA00492D65 /* ImmutableModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImmutableModels.h; sourceTree = "<group>"; };
+		22EA18CA21EEEEBA00492D65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22EA18D621EEF0C500492D65 /* CustomCells+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomCells+Extensions.swift"; sourceTree = "<group>"; };
+		22EA18DD21EEF19800492D65 /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22EA18DF21EEF19900492D65 /* Services.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Services.h; sourceTree = "<group>"; };
+		22EA18E021EEF19900492D65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22EA18E921EEF1AD00492D65 /* DrinkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkService.swift; sourceTree = "<group>"; };
+		22EA18EE21EF7DB300492D65 /* DrinksListResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksListResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +105,23 @@
 			files = (
 				22EA189121EE7CEE00492D65 /* Kingfisher.framework in Frameworks */,
 				22EA189221EE7CEE00492D65 /* Alamofire.framework in Frameworks */,
+				22EA18E421EEF19900492D65 /* Services.framework in Frameworks */,
+				22EA18CE21EEEEBA00492D65 /* ImmutableModels.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EA18C421EEEEB900492D65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EA18DA21EEF19800492D65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EA18EB21EF01C600492D65 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				22EA187B21EE5E7000492D65 /* FECodeTest */,
+				22EA18C821EEEEBA00492D65 /* ImmutableModels */,
+				22EA18DE21EEF19900492D65 /* Services */,
 				22EA187A21EE5E7000492D65 /* Products */,
 				22EA188E21EE7CEE00492D65 /* Frameworks */,
 			);
@@ -54,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				22EA187921EE5E7000492D65 /* FECodeTest.app */,
+				22EA18C721EEEEB900492D65 /* ImmutableModels.framework */,
+				22EA18DD21EEF19800492D65 /* Services.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,12 +152,16 @@
 		22EA187B21EE5E7000492D65 /* FECodeTest */ = {
 			isa = PBXGroup;
 			children = (
+				22EA18D521EEF0AD00492D65 /* Extensions */,
+				22EA189E21EEE85F00492D65 /* CustomCells */,
+				22EA189621EE816900492D65 /* ViewControllers */,
 				22EA187C21EE5E7000492D65 /* AppDelegate.swift */,
 				22EA187E21EE5E7000492D65 /* ViewController.swift */,
 				22EA188021EE5E7000492D65 /* Main.storyboard */,
 				22EA188321EE5E7200492D65 /* Assets.xcassets */,
 				22EA188521EE5E7200492D65 /* LaunchScreen.storyboard */,
 				22EA188821EE5E7200492D65 /* Info.plist */,
+				22EA189421EE7E3F00492D65 /* AppCoordinator.swift */,
 			);
 			path = FECodeTest;
 			sourceTree = "<group>";
@@ -80,7 +175,73 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		22EA189621EE816900492D65 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				22EA189721EE819300492D65 /* DrinksListViewController.swift */,
+				22EA189821EE819300492D65 /* DrinksListViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		22EA189E21EEE85F00492D65 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				22EA18A321EEEC6F00492D65 /* DrinkTableViewCell.swift */,
+				22EA18A421EEEC6F00492D65 /* DrinkTableViewCell.xib */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		22EA18C821EEEEBA00492D65 /* ImmutableModels */ = {
+			isa = PBXGroup;
+			children = (
+				22EA189C21EE87BD00492D65 /* DrinkListItem.swift */,
+				22EA18C921EEEEBA00492D65 /* ImmutableModels.h */,
+				22EA18CA21EEEEBA00492D65 /* Info.plist */,
+				22EA18EE21EF7DB300492D65 /* DrinksListResult.swift */,
+			);
+			path = ImmutableModels;
+			sourceTree = "<group>";
+		};
+		22EA18D521EEF0AD00492D65 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				22EA18D621EEF0C500492D65 /* CustomCells+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		22EA18DE21EEF19900492D65 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				22EA18DF21EEF19900492D65 /* Services.h */,
+				22EA18E021EEF19900492D65 /* Info.plist */,
+				22EA18E921EEF1AD00492D65 /* DrinkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		22EA18C221EEEEB900492D65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EA18CB21EEEEBA00492D65 /* ImmutableModels.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EA18D821EEF19800492D65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EA18E121EEF19900492D65 /* Services.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		22EA187821EE5E7000492D65 /* FECodeTest */ = {
@@ -91,15 +252,55 @@
 				22EA187621EE5E7000492D65 /* Frameworks */,
 				22EA187721EE5E7000492D65 /* Resources */,
 				22EA189321EE7D4B00492D65 /* ShellScript */,
+				22EA18D321EEEEBA00492D65 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				22EA18CD21EEEEBA00492D65 /* PBXTargetDependency */,
+				22EA18E321EEF19900492D65 /* PBXTargetDependency */,
 			);
 			name = FECodeTest;
 			productName = FECodeTest;
 			productReference = 22EA187921EE5E7000492D65 /* FECodeTest.app */;
 			productType = "com.apple.product-type.application";
+		};
+		22EA18C621EEEEB900492D65 /* ImmutableModels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22EA18D021EEEEBA00492D65 /* Build configuration list for PBXNativeTarget "ImmutableModels" */;
+			buildPhases = (
+				22EA18C221EEEEB900492D65 /* Headers */,
+				22EA18C321EEEEB900492D65 /* Sources */,
+				22EA18C421EEEEB900492D65 /* Frameworks */,
+				22EA18C521EEEEB900492D65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImmutableModels;
+			productName = ImmutableModels;
+			productReference = 22EA18C721EEEEB900492D65 /* ImmutableModels.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		22EA18DC21EEF19800492D65 /* Services */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22EA18E621EEF19900492D65 /* Build configuration list for PBXNativeTarget "Services" */;
+			buildPhases = (
+				22EA18D821EEF19800492D65 /* Headers */,
+				22EA18D921EEF19800492D65 /* Sources */,
+				22EA18DA21EEF19800492D65 /* Frameworks */,
+				22EA18DB21EEF19800492D65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22EA18ED21EF032400492D65 /* PBXTargetDependency */,
+			);
+			name = Services;
+			productName = Services;
+			productReference = 22EA18DD21EEF19800492D65 /* Services.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -113,6 +314,13 @@
 				TargetAttributes = {
 					22EA187821EE5E7000492D65 = {
 						CreatedOnToolsVersion = 10.0;
+					};
+					22EA18C621EEEEB900492D65 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					22EA18DC21EEF19800492D65 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -130,6 +338,8 @@
 			projectRoot = "";
 			targets = (
 				22EA187821EE5E7000492D65 /* FECodeTest */,
+				22EA18C621EEEEB900492D65 /* ImmutableModels */,
+				22EA18DC21EEF19800492D65 /* Services */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +352,22 @@
 				22EA188721EE5E7200492D65 /* LaunchScreen.storyboard in Resources */,
 				22EA188421EE5E7200492D65 /* Assets.xcassets in Resources */,
 				22EA188221EE5E7000492D65 /* Main.storyboard in Resources */,
+				22EA18A621EEEC6F00492D65 /* DrinkTableViewCell.xib in Resources */,
+				22EA189A21EE819300492D65 /* DrinksListViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EA18C521EEEEB900492D65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EA18DB21EEF19800492D65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,12 +402,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22EA189521EE7E3F00492D65 /* AppCoordinator.swift in Sources */,
 				22EA187F21EE5E7000492D65 /* ViewController.swift in Sources */,
+				22EA18D721EEF0C500492D65 /* CustomCells+Extensions.swift in Sources */,
 				22EA187D21EE5E7000492D65 /* AppDelegate.swift in Sources */,
+				22EA18A521EEEC6F00492D65 /* DrinkTableViewCell.swift in Sources */,
+				22EA189921EE819300492D65 /* DrinksListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EA18C321EEEEB900492D65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EA18D421EEEEC200492D65 /* DrinkListItem.swift in Sources */,
+				22EA18EF21EF7DB300492D65 /* DrinksListResult.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EA18D921EEF19800492D65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EA18EA21EEF1AD00492D65 /* DrinkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22EA18CD21EEEEBA00492D65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22EA18C621EEEEB900492D65 /* ImmutableModels */;
+			targetProxy = 22EA18CC21EEEEBA00492D65 /* PBXContainerItemProxy */;
+		};
+		22EA18E321EEF19900492D65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22EA18DC21EEF19800492D65 /* Services */;
+			targetProxy = 22EA18E221EEF19900492D65 /* PBXContainerItemProxy */;
+		};
+		22EA18ED21EF032400492D65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22EA18C621EEEEB900492D65 /* ImmutableModels */;
+			targetProxy = 22EA18EC21EF032400492D65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		22EA188021EE5E7000492D65 /* Main.storyboard */ = {
@@ -322,6 +587,7 @@
 		22EA188C21EE5E7200492D65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -343,6 +609,7 @@
 		22EA188D21EE5E7200492D65 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -358,6 +625,125 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22EA18D121EEEEBA00492D65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ImmutableModels/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gonzaloz.ImmutableModels;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		22EA18D221EEEEBA00492D65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ImmutableModels/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gonzaloz.ImmutableModels;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		22EA18E721EEF19900492D65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Services/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gonzaloz.Services;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		22EA18E821EEF19900492D65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Services/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gonzaloz.Services;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -378,6 +764,24 @@
 			buildConfigurations = (
 				22EA188C21EE5E7200492D65 /* Debug */,
 				22EA188D21EE5E7200492D65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22EA18D021EEEEBA00492D65 /* Build configuration list for PBXNativeTarget "ImmutableModels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22EA18D121EEEEBA00492D65 /* Debug */,
+				22EA18D221EEEEBA00492D65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22EA18E621EEF19900492D65 /* Build configuration list for PBXNativeTarget "Services" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22EA18E721EEF19900492D65 /* Debug */,
+				22EA18E821EEF19900492D65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
