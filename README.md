@@ -5,6 +5,7 @@ Exercise solved in Swift.
 
 Everything is set up and dependencies are added to source control. Just checkout the branch and run.
 
+Project directory is under FECodeTest directory (one directory above main one)
 
 ## Questions:
 
