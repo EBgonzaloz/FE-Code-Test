@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		22EA187D21EE5E7000492D65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA187C21EE5E7000492D65 /* AppDelegate.swift */; };
-		22EA187F21EE5E7000492D65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA187E21EE5E7000492D65 /* ViewController.swift */; };
-		22EA188221EE5E7000492D65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EA188021EE5E7000492D65 /* Main.storyboard */; };
 		22EA188421EE5E7200492D65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22EA188321EE5E7200492D65 /* Assets.xcassets */; };
 		22EA188721EE5E7200492D65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EA188521EE5E7200492D65 /* LaunchScreen.storyboard */; };
 		22EA189121EE7CEE00492D65 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EA188F21EE7CEE00492D65 /* Kingfisher.framework */; };
@@ -33,8 +31,8 @@
 		22EA18F121EF961400492D65 /* DrinkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA18F021EF961400492D65 /* DrinkItem.swift */; };
 		22EA18F421EF9B5400492D65 /* DrinkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA18F221EF9B5400492D65 /* DrinkDetailViewController.swift */; };
 		22EA18F521EF9B5400492D65 /* DrinkDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22EA18F321EF9B5400492D65 /* DrinkDetailViewController.xib */; };
-		22EA18F721EFA22200492D65 /* IngredientLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA18F621EFA22200492D65 /* IngredientLabelView.swift */; };
 		22EA18FB21F173C700492D65 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA18FA21F173C700492D65 /* UIColor+extension.swift */; };
+		22EA18FE21F1962800492D65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EA18FC21F1962800492D65 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,8 +77,6 @@
 /* Begin PBXFileReference section */
 		22EA187921EE5E7000492D65 /* FECodeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FECodeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EA187C21EE5E7000492D65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22EA187E21EE5E7000492D65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		22EA188121EE5E7000492D65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22EA188321EE5E7200492D65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22EA188621EE5E7200492D65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22EA188821EE5E7200492D65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,8 +100,8 @@
 		22EA18F021EF961400492D65 /* DrinkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkItem.swift; sourceTree = "<group>"; };
 		22EA18F221EF9B5400492D65 /* DrinkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailViewController.swift; sourceTree = "<group>"; };
 		22EA18F321EF9B5400492D65 /* DrinkDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinkDetailViewController.xib; sourceTree = "<group>"; };
-		22EA18F621EFA22200492D65 /* IngredientLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientLabelView.swift; sourceTree = "<group>"; };
 		22EA18FA21F173C700492D65 /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
+		22EA18FD21F1962800492D65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,12 +158,11 @@
 		22EA187B21EE5E7000492D65 /* FECodeTest */ = {
 			isa = PBXGroup;
 			children = (
+				22EA18FC21F1962800492D65 /* Main.storyboard */,
 				22EA18D521EEF0AD00492D65 /* Extensions */,
 				22EA189E21EEE85F00492D65 /* CustomViews */,
 				22EA189621EE816900492D65 /* ViewControllers */,
 				22EA187C21EE5E7000492D65 /* AppDelegate.swift */,
-				22EA187E21EE5E7000492D65 /* ViewController.swift */,
-				22EA188021EE5E7000492D65 /* Main.storyboard */,
 				22EA188321EE5E7200492D65 /* Assets.xcassets */,
 				22EA188521EE5E7200492D65 /* LaunchScreen.storyboard */,
 				22EA188821EE5E7200492D65 /* Info.plist */,
@@ -201,7 +196,6 @@
 			children = (
 				22EA18A321EEEC6F00492D65 /* DrinkTableViewCell.swift */,
 				22EA18A421EEEC6F00492D65 /* DrinkTableViewCell.xib */,
-				22EA18F621EFA22200492D65 /* IngredientLabelView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -366,8 +360,8 @@
 			files = (
 				22EA188721EE5E7200492D65 /* LaunchScreen.storyboard in Resources */,
 				22EA188421EE5E7200492D65 /* Assets.xcassets in Resources */,
-				22EA188221EE5E7000492D65 /* Main.storyboard in Resources */,
 				22EA18A621EEEC6F00492D65 /* DrinkTableViewCell.xib in Resources */,
+				22EA18FE21F1962800492D65 /* Main.storyboard in Resources */,
 				22EA18F521EF9B5400492D65 /* DrinkDetailViewController.xib in Resources */,
 				22EA189A21EE819300492D65 /* DrinksListViewController.xib in Resources */,
 			);
@@ -419,10 +413,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				22EA189521EE7E3F00492D65 /* AppCoordinator.swift in Sources */,
-				22EA187F21EE5E7000492D65 /* ViewController.swift in Sources */,
 				22EA18D721EEF0C500492D65 /* CustomCells+Extensions.swift in Sources */,
 				22EA18FB21F173C700492D65 /* UIColor+extension.swift in Sources */,
-				22EA18F721EFA22200492D65 /* IngredientLabelView.swift in Sources */,
 				22EA187D21EE5E7000492D65 /* AppDelegate.swift in Sources */,
 				22EA18A521EEEC6F00492D65 /* DrinkTableViewCell.swift in Sources */,
 				22EA18F421EF9B5400492D65 /* DrinkDetailViewController.swift in Sources */,
@@ -469,20 +461,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		22EA188021EE5E7000492D65 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				22EA188121EE5E7000492D65 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		22EA188521EE5E7200492D65 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				22EA188621EE5E7200492D65 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		22EA18FC21F1962800492D65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22EA18FD21F1962800492D65 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

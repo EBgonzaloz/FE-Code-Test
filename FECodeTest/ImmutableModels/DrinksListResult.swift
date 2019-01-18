@@ -8,6 +8,7 @@
 
 import Foundation
 
+// We need this beacuse of the API response format
 public struct DrinksListResult: Decodable {
     public let drinks: [DrinkListItem]
 }

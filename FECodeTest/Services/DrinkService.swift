@@ -10,10 +10,12 @@ import Foundation
 import Alamofire
 import ImmutableModels
 
+// Service layer
 public class DrinkService {
     
     static let serverURL = "http://www.thecocktaildb.com/api/json/v1/1/"
 
+    // get full list
     public static func getDrinksList(success: @escaping (DrinksListResult) -> (), failure: @escaping (Error) -> ()) {
         let url = serverURL + "filter.php?g=Cocktail_glass"
         AF.request(url, method: .get).responseJSON() { response in
@@ -37,6 +39,7 @@ public class DrinkService {
         }
     }
 
+    // Get drink details by id
     public static func getDrinkDetails(drinkListItem: DrinkListItem, success: @escaping (DrinkItem) -> (), failure: @escaping (Error) -> ()) {
         let url = serverURL + "lookup.php?i=\(drinkListItem.idDrink)"
         AF.request(url, method: .get).responseJSON() { response in

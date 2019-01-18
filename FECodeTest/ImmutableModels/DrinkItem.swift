@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Again, this is only needed because of the response format
 public struct DrinkItemResult: Decodable {
     public let drinks: [DrinkItem]
 }
@@ -51,7 +52,8 @@ public struct DrinkItem: Decodable {
     public let strMeasure14: String?
     public let strMeasure15: String?
 
-    public func getIngredients() -> (ingredients: [String], measures: [String]) {
+    // Getting the
+    public func getPreparationDetails() -> (ingredients: [String], measures: [String]) {
         var ingredients: [String] = []
         var measures: [String] = []
         let mirroredObject = Mirror.init(reflecting: self)

@@ -46,11 +46,13 @@ class DrinkDetailViewController: UIViewController {
             }
 
             // Set up the preparation list
-            let ingredients = item.getIngredients()
+            let prepDetails = item.getPreparationDetails()
             var prepStrings = [""]
+            // Because of the API response we are sure we will always get 15 of each (ingredients and measures)
             for i in 0...14 {
-                if ingredients.ingredients.indices.contains(i) && !ingredients.ingredients[i].isEmpty {
-                    prepStrings.append("\(ingredients.measures[i]) - \(ingredients.ingredients[i])")
+                // Ingredients could be nil or empty (because of API)
+                if prepDetails.ingredients.indices.contains(i) && !prepDetails.ingredients[i].isEmpty {
+                    prepStrings.append(getPreparationItem(ingredient: prepDetails.ingredients[i], measure: prepDetails.measures[i]))
                     let string = prepStrings.joined(separator: "\n")
                     prepLabel.text = string
                 }
@@ -63,6 +65,11 @@ class DrinkDetailViewController: UIViewController {
             // Set up navBar
             self.navigationItem.title = item.strDrink
         }
+    }
+
+    func getPreparationItem(ingredient: String, measure:String) -> String {
+        let preparationItemString = "\(measure) - \(ingredient)"
+        return preparationItemString.replacingOccurrences(of: "\n", with: "")
     }
 
     override func viewDidLoad() {

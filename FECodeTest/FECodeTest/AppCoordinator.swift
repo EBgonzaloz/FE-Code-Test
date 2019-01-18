@@ -18,13 +18,17 @@ public class AppCoordinator: NSObject {
 
     var drinksList: [DrinkListItem]?
 
+    // Coordinator start method
     func start(with appWindow: UIWindow) {
+        // Instantiate root VC
         listViewController = DrinksListViewController()
         listViewController?.delegate = self
 
         // I can force the unwraping here since I just set the value two lines above
         let navController = UINavigationController(rootViewController: self.listViewController!)
         navViewController = navController
+
+        // NavigationBar set up
         navViewController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         navViewController?.navigationBar.shadowImage = UIImage()
         navViewController?.navigationBar.isTranslucent = true
@@ -36,6 +40,7 @@ public class AppCoordinator: NSObject {
         appWindow.rootViewController = navController
         appWindow.makeKeyAndVisible()
 
+        // Lets get the drinks list
         let spinnerView = displaySpinner()
         DrinkService.getDrinksList(success: { [self] (result) in
             spinnerView?.removeFromSuperview()
@@ -65,12 +70,17 @@ public class AppCoordinator: NSObject {
 
 }
 
+// MARK: DrinkList VC delegate
 extension AppCoordinator: DrinkListDelegate {
 
+    // handling item selection from DrinkList
     func didSelectItem(item: DrinkListItem) {
         let spinnerView = displaySpinner()
+        // Gets the item details
         DrinkService.getDrinkDetails(drinkListItem: item, success: {[self] result in
             spinnerView?.removeFromSuperview()
+
+            // Create the detail VC and populate with data
             let detailsViewController = DrinkDetailViewController()
             _ = detailsViewController.view
             detailsViewController.item = result
@@ -82,11 +92,16 @@ extension AppCoordinator: DrinkListDelegate {
         })
     }
 
+    // Handling search from DrinkList
     func didSearchDrinks(text: String?) {
+
+        // If there is no text for teh search, return the whole list
         guard let text = text else {
             listViewController?.drinksList = self.drinksList
             return
         }
+
+        // Otherwise filter the list, set to VC and refresh the tableView
         guard let drinksList = drinksList else { assertionFailure("This should never happen, if it happens we are doing something wrong"); return }
         let result = drinksList.filter { $0.strDrink.contains(text) }
         listViewController?.drinksList = result
