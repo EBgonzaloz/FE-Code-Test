@@ -21,6 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             assertionFailure("No window, the app won't work")
             return false
         }
+        let backImage = UIImage(named: "backBtn")?.withRenderingMode(.alwaysTemplate)
+        UINavigationBar.appearance().backIndicatorImage = backImage
+        UINavigationBar.appearance().backIndicatorTransitionMaskImage = backImage
+        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset(horizontal: 0, vertical: -0.0), for: .default)
+
         coordinator = AppCoordinator()
         coordinator.start(with: window)
         return true

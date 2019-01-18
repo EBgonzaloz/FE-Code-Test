@@ -12,19 +12,15 @@ import Kingfisher
 
 protocol DrinkListDelegate: class {
     func didSelectItem(item: DrinkListItem)
+    func didSearchDrinks(text: String?)
 }
 
 class DrinksListViewController: UIViewController {
 
     var drinksList: [DrinkListItem]? = nil {
         didSet {
+            errorLabel.isHidden = drinksList?.count ?? 0 > 0
             tableView.reloadData()
-        }
-    }
-    
-    @IBOutlet weak var containerView: UIView! {
-        didSet {
-            containerView.backgroundColor = #colorLiteral(red: 0.4235294118, green: 0.7294117647, blue: 0.8078431373, alpha: 1)
         }
     }
 
@@ -34,6 +30,12 @@ class DrinksListViewController: UIViewController {
         }
     }
 
+    @IBOutlet weak var containerView: UIView! {
+        didSet {
+            containerView.backgroundColor = UIColor.backgroundColor
+        }
+    }
+    
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.delegate = self
@@ -43,13 +45,29 @@ class DrinksListViewController: UIViewController {
         }
     }
 
-    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var searchBar: UISearchBar! {
+        didSet {
+            searchBar.barTintColor = UIColor.backgroundColor
+            searchBar.backgroundImage = Image()
+            searchBar.layer.borderColor = UIColor.clear.cgColor
+            searchBar.delegate = self
+        }
+    }
+
+    @IBOutlet weak var errorLabel: UILabel! {
+        didSet {
+            errorLabel.textColor = UIColor.white
+            errorLabel.isHidden = true
+        }
+    }
 
     weak var delegate: DrinkListDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.backgroundColor
         tableView.register(UINib(nibName: DrinkTableViewCell.cellIdentifier, bundle: nil), forCellReuseIdentifier: DrinkTableViewCell.cellIdentifier)
+        self.navigationItem.title = "Random Drinks"
     }
 
 }
@@ -78,4 +96,13 @@ extension DrinksListViewController: UITableViewDelegate, UITableViewDataSource {
         let item = drinksList[indexPath.row]
         delegate?.didSelectItem(item: item)
     }
+}
+
+extension DrinksListViewController: UISearchBarDelegate {
+
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        delegate?.didSearchDrinks(text: searchBar.text != nil && !searchBar.text!.isEmpty ? searchBar.text : nil)
+        searchBar.resignFirstResponder()
+    }
+
 }

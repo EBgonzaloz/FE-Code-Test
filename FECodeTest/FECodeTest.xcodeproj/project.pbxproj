@@ -34,6 +34,7 @@
 		22EA18F421EF9B5400492D65 /* DrinkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA18F221EF9B5400492D65 /* DrinkDetailViewController.swift */; };
 		22EA18F521EF9B5400492D65 /* DrinkDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22EA18F321EF9B5400492D65 /* DrinkDetailViewController.xib */; };
 		22EA18F721EFA22200492D65 /* IngredientLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA18F621EFA22200492D65 /* IngredientLabelView.swift */; };
+		22EA18FB21F173C700492D65 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA18FA21F173C700492D65 /* UIColor+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		22EA18F221EF9B5400492D65 /* DrinkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailViewController.swift; sourceTree = "<group>"; };
 		22EA18F321EF9B5400492D65 /* DrinkDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinkDetailViewController.xib; sourceTree = "<group>"; };
 		22EA18F621EFA22200492D65 /* IngredientLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientLabelView.swift; sourceTree = "<group>"; };
+		22EA18FA21F173C700492D65 /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				22EA18D621EEF0C500492D65 /* CustomCells+Extensions.swift */,
+				22EA18FA21F173C700492D65 /* UIColor+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				22EA189521EE7E3F00492D65 /* AppCoordinator.swift in Sources */,
 				22EA187F21EE5E7000492D65 /* ViewController.swift in Sources */,
 				22EA18D721EEF0C500492D65 /* CustomCells+Extensions.swift in Sources */,
+				22EA18FB21F173C700492D65 /* UIColor+extension.swift in Sources */,
 				22EA18F721EFA22200492D65 /* IngredientLabelView.swift in Sources */,
 				22EA187D21EE5E7000492D65 /* AppDelegate.swift in Sources */,
 				22EA18A521EEEC6F00492D65 /* DrinkTableViewCell.swift in Sources */,

@@ -16,6 +16,7 @@ class IngredientLabelView: UILabel {
     
     public func configure(with ingredient: String, and measure: String) {
         textColor = #colorLiteral(red: 0.5803921569, green: 0.5803921569, blue: 0.5803921569, alpha: 1)
+        UIColor.white
         self.text = "\(measure) - \(ingredient)"
     }
 

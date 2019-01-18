@@ -11,10 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DrinksListViewController" customModule="FECodeTest" customModuleProvider="target">
             <connections>
-                <outlet property="containerView" destination="QY1-2b-pb3" id="VbB-ss-bQ5"/>
+                <outlet property="containerView" destination="QY1-2b-pb3" id="6wD-DN-8C6"/>
+                <outlet property="errorLabel" destination="nhr-ff-8fI" id="aMS-jj-ub4"/>
                 <outlet property="searchBar" destination="uNl-pG-upp" id="2ZF-je-E6r"/>
                 <outlet property="tableView" destination="gY4-cU-8TE" id="Ife-32-P9I"/>
-                <outlet property="titleLabel" destination="RJi-ea-Bjc" id="3Ua-At-x0b"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,31 +27,32 @@
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <subviews>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gY4-cU-8TE">
-                            <rect key="frame" x="0.0" y="112" width="375" height="535"/>
+                            <rect key="frame" x="0.0" y="71" width="375" height="576"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </tableView>
                         <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="uNl-pG-upp">
-                            <rect key="frame" x="0.0" y="56" width="375" height="56"/>
+                            <rect key="frame" x="0.0" y="15" width="375" height="56"/>
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJi-ea-Bjc">
-                            <rect key="frame" x="50" y="20" width="275" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops! Seems like there are no results for your search!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhr-ff-8fI">
+                            <rect key="frame" x="30" y="301" width="315" height="45.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="RJi-ea-Bjc" secondAttribute="trailing" constant="50" id="1Qg-OV-KIM"/>
                         <constraint firstItem="gY4-cU-8TE" firstAttribute="leading" secondItem="QY1-2b-pb3" secondAttribute="leading" id="2KQ-UG-sUG"/>
-                        <constraint firstItem="uNl-pG-upp" firstAttribute="top" secondItem="RJi-ea-Bjc" secondAttribute="bottom" constant="15" id="4Hz-bH-S14"/>
-                        <constraint firstItem="RJi-ea-Bjc" firstAttribute="top" secondItem="QY1-2b-pb3" secondAttribute="top" constant="20" id="DwB-y8-YSe"/>
+                        <constraint firstAttribute="trailing" secondItem="nhr-ff-8fI" secondAttribute="trailing" constant="30" id="LW2-8L-R9f"/>
+                        <constraint firstItem="nhr-ff-8fI" firstAttribute="leading" secondItem="QY1-2b-pb3" secondAttribute="leading" constant="30" id="Pdt-Ny-YXH"/>
                         <constraint firstItem="gY4-cU-8TE" firstAttribute="top" secondItem="uNl-pG-upp" secondAttribute="bottom" id="Wnh-RW-6Jp"/>
+                        <constraint firstItem="nhr-ff-8fI" firstAttribute="centerX" secondItem="QY1-2b-pb3" secondAttribute="centerX" id="bl6-If-fWI"/>
                         <constraint firstAttribute="bottom" secondItem="gY4-cU-8TE" secondAttribute="bottom" id="bnr-ZF-5sB"/>
                         <constraint firstItem="uNl-pG-upp" firstAttribute="leading" secondItem="QY1-2b-pb3" secondAttribute="leading" id="dhH-P3-B0I"/>
                         <constraint firstAttribute="trailing" secondItem="gY4-cU-8TE" secondAttribute="trailing" id="e4e-5G-4z8"/>
-                        <constraint firstItem="RJi-ea-Bjc" firstAttribute="leading" secondItem="QY1-2b-pb3" secondAttribute="leading" constant="50" id="omm-bZ-1bx"/>
+                        <constraint firstItem="uNl-pG-upp" firstAttribute="top" secondItem="QY1-2b-pb3" secondAttribute="top" constant="15" id="fj7-g9-Amz"/>
+                        <constraint firstItem="nhr-ff-8fI" firstAttribute="centerY" secondItem="QY1-2b-pb3" secondAttribute="centerY" id="igU-Dy-JO1"/>
                         <constraint firstAttribute="trailing" secondItem="uNl-pG-upp" secondAttribute="trailing" id="wKq-kD-INe"/>
                     </constraints>
                 </view>

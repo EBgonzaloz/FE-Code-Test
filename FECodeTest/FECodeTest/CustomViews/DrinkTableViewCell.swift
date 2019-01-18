@@ -23,12 +23,12 @@ class DrinkTableViewCell: UITableViewCell {
     }
     @IBOutlet weak var titleLabel: UILabel! {
         didSet {
-            titleLabel.textColor = #colorLiteral(red: 0.4392156863, green: 0.4392156863, blue: 0.4392156863, alpha: 1)
+            titleLabel.textColor = UIColor.textColor
         }
     }
     @IBOutlet weak var detailLabel: UILabel! {
         didSet {
-            detailLabel.textColor = #colorLiteral(red: 0.4392156863, green: 0.4392156863, blue: 0.4392156863, alpha: 1)
+            detailLabel.textColor = UIColor.textColor
             detailLabel.numberOfLines = 0
             detailLabel.text = "API response is not returning the data shown in the wireframe for this cell, so this is a dummy label"
             detailLabel.sizeToFit()
@@ -38,7 +38,7 @@ class DrinkTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        contentView.backgroundColor = #colorLiteral(red: 0.4235294118, green: 0.7294117647, blue: 0.8078431373, alpha: 1)
+        contentView.backgroundColor = UIColor.backgroundColor
         self.selectionStyle = .none
     }
 

@@ -18,14 +18,25 @@ class DrinkDetailViewController: UIViewController {
             scrollView.backgroundColor = UIColor.white
         }
     }
+
     @IBOutlet weak var imageView: UIImageView! {
         didSet {
             imageView.layer.cornerRadius = 5
             imageView.clipsToBounds = true
         }
     }
-    @IBOutlet weak var ingredientsStackView: UIStackView!
-    @IBOutlet weak var instructionsTextView: UITextView!
+
+    @IBOutlet weak var prepLabel: UILabel! {
+        didSet {
+            prepLabel.textColor = UIColor.prepColor
+        }
+    }
+
+    @IBOutlet weak var instructionsTextView: UITextView! {
+        didSet {
+            instructionsTextView.textColor = UIColor.prepColor
+        }
+    }
 
     var item: DrinkItem! {
         didSet {
@@ -34,27 +45,30 @@ class DrinkDetailViewController: UIViewController {
                 imageView.kf.setImage(with: imageURL)
             }
 
-            // Set up the StackView
+            // Set up the preparation list
             let ingredients = item.getIngredients()
+            var prepStrings = [""]
             for i in 0...14 {
                 if ingredients.ingredients.indices.contains(i) && !ingredients.ingredients[i].isEmpty {
-                    let view = IngredientLabelView(frame: CGRect(x: 0, y: 0, width: ingredientsStackView.frame.width, height: 20))
-                    view.configure(with: ingredients.ingredients[i], and: ingredients.measures[i])
-                    ingredientsStackView.addArrangedSubview(view)
-//                    view.sizeToFit()
-//                    view.layoutIfNeeded()
+                    prepStrings.append("\(ingredients.measures[i]) - \(ingredients.ingredients[i])")
+                    let string = prepStrings.joined(separator: "\n")
+                    prepLabel.text = string
                 }
             }
-            ingredientsStackView.layoutIfNeeded()
+
             // Set up the TextView
             guard let instructions = item.strInstructions else { return }
             instructionsTextView.text = "How to prepare \n \n \(instructions)"
+
+            // Set up navBar
+            self.navigationItem.title = item.strDrink
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor.backgroundColor
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 
 
