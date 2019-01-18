@@ -10,7 +10,7 @@ import UIKit
 import ImmutableModels
 import Kingfisher
 
-protocol DrinkListDelegate {
+protocol DrinkListDelegate: class {
     func didSelectItem(item: DrinkListItem)
 }
 
@@ -45,6 +45,8 @@ class DrinksListViewController: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
 
+    weak var delegate: DrinkListDelegate?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: DrinkTableViewCell.cellIdentifier, bundle: nil), forCellReuseIdentifier: DrinkTableViewCell.cellIdentifier)
@@ -71,4 +73,9 @@ extension DrinksListViewController: UITableViewDelegate, UITableViewDataSource {
         return 170
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let drinksList = drinksList, drinksList.indices.contains(indexPath.row) else { return }
+        let item = drinksList[indexPath.row]
+        delegate?.didSelectItem(item: item)
+    }
 }

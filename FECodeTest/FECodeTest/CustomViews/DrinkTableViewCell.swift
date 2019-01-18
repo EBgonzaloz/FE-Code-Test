@@ -39,6 +39,7 @@ class DrinkTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         contentView.backgroundColor = #colorLiteral(red: 0.4235294118, green: 0.7294117647, blue: 0.8078431373, alpha: 1)
+        self.selectionStyle = .none
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

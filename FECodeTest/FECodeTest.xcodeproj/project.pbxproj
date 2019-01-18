@@ -30,6 +30,10 @@
 		22EA18EA21EEF1AD00492D65 /* DrinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA18E921EEF1AD00492D65 /* DrinkService.swift */; };
 		22EA18EB21EF01C600492D65 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EA189021EE7CEE00492D65 /* Alamofire.framework */; };
 		22EA18EF21EF7DB300492D65 /* DrinksListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA18EE21EF7DB300492D65 /* DrinksListResult.swift */; };
+		22EA18F121EF961400492D65 /* DrinkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA18F021EF961400492D65 /* DrinkItem.swift */; };
+		22EA18F421EF9B5400492D65 /* DrinkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA18F221EF9B5400492D65 /* DrinkDetailViewController.swift */; };
+		22EA18F521EF9B5400492D65 /* DrinkDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22EA18F321EF9B5400492D65 /* DrinkDetailViewController.xib */; };
+		22EA18F721EFA22200492D65 /* IngredientLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA18F621EFA22200492D65 /* IngredientLabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +100,10 @@
 		22EA18E021EEF19900492D65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22EA18E921EEF1AD00492D65 /* DrinkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkService.swift; sourceTree = "<group>"; };
 		22EA18EE21EF7DB300492D65 /* DrinksListResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksListResult.swift; sourceTree = "<group>"; };
+		22EA18F021EF961400492D65 /* DrinkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkItem.swift; sourceTree = "<group>"; };
+		22EA18F221EF9B5400492D65 /* DrinkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailViewController.swift; sourceTree = "<group>"; };
+		22EA18F321EF9B5400492D65 /* DrinkDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinkDetailViewController.xib; sourceTree = "<group>"; };
+		22EA18F621EFA22200492D65 /* IngredientLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientLabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				22EA18D521EEF0AD00492D65 /* Extensions */,
-				22EA189E21EEE85F00492D65 /* CustomCells */,
+				22EA189E21EEE85F00492D65 /* CustomViews */,
 				22EA189621EE816900492D65 /* ViewControllers */,
 				22EA187C21EE5E7000492D65 /* AppDelegate.swift */,
 				22EA187E21EE5E7000492D65 /* ViewController.swift */,
@@ -180,17 +188,20 @@
 			children = (
 				22EA189721EE819300492D65 /* DrinksListViewController.swift */,
 				22EA189821EE819300492D65 /* DrinksListViewController.xib */,
+				22EA18F221EF9B5400492D65 /* DrinkDetailViewController.swift */,
+				22EA18F321EF9B5400492D65 /* DrinkDetailViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		22EA189E21EEE85F00492D65 /* CustomCells */ = {
+		22EA189E21EEE85F00492D65 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
 				22EA18A321EEEC6F00492D65 /* DrinkTableViewCell.swift */,
 				22EA18A421EEEC6F00492D65 /* DrinkTableViewCell.xib */,
+				22EA18F621EFA22200492D65 /* IngredientLabelView.swift */,
 			);
-			path = CustomCells;
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		22EA18C821EEEEBA00492D65 /* ImmutableModels */ = {
@@ -200,6 +211,7 @@
 				22EA18C921EEEEBA00492D65 /* ImmutableModels.h */,
 				22EA18CA21EEEEBA00492D65 /* Info.plist */,
 				22EA18EE21EF7DB300492D65 /* DrinksListResult.swift */,
+				22EA18F021EF961400492D65 /* DrinkItem.swift */,
 			);
 			path = ImmutableModels;
 			sourceTree = "<group>";
@@ -353,6 +365,7 @@
 				22EA188421EE5E7200492D65 /* Assets.xcassets in Resources */,
 				22EA188221EE5E7000492D65 /* Main.storyboard in Resources */,
 				22EA18A621EEEC6F00492D65 /* DrinkTableViewCell.xib in Resources */,
+				22EA18F521EF9B5400492D65 /* DrinkDetailViewController.xib in Resources */,
 				22EA189A21EE819300492D65 /* DrinksListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,8 +418,10 @@
 				22EA189521EE7E3F00492D65 /* AppCoordinator.swift in Sources */,
 				22EA187F21EE5E7000492D65 /* ViewController.swift in Sources */,
 				22EA18D721EEF0C500492D65 /* CustomCells+Extensions.swift in Sources */,
+				22EA18F721EFA22200492D65 /* IngredientLabelView.swift in Sources */,
 				22EA187D21EE5E7000492D65 /* AppDelegate.swift in Sources */,
 				22EA18A521EEEC6F00492D65 /* DrinkTableViewCell.swift in Sources */,
+				22EA18F421EF9B5400492D65 /* DrinkDetailViewController.swift in Sources */,
 				22EA189921EE819300492D65 /* DrinksListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +432,7 @@
 			files = (
 				22EA18D421EEEEC200492D65 /* DrinkListItem.swift in Sources */,
 				22EA18EF21EF7DB300492D65 /* DrinksListResult.swift in Sources */,
+				22EA18F121EF961400492D65 /* DrinkItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
